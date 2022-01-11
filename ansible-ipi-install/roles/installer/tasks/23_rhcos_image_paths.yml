@@ -1,7 +1,7 @@
 ---
 - name: Get COMMIT_ID
   shell: |
-    /usr/local/bin/openshift-baremetal-installer version | grep '^built from commit' | awk '{print $4}'
+    /usr/local/bin/openshift-baremetal-install version | grep '^built from commit' | awk '{print $4}'
   register: commit_id
   tags: rhcospath
 
